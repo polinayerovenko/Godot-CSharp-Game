@@ -1,0 +1,86 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm1dfhoia6qvv"]
+
+[ext_resource type="Script" path="res://Submit.cs" id="1_n1y07"]
+[ext_resource type="Texture2D" uid="uid://chwd0uu6lp6sr" path="res://toggles.png" id="2_5dscb"]
+[ext_resource type="Texture2D" uid="uid://dxspfxr8mje2u" path="res://check-mark.png" id="5_15pjw"]
+[ext_resource type="Texture2D" uid="uid://cvyy2jngg4dpc" path="res://crossed-bones.png" id="6_gyx5y"]
+
+[node name="Submit" type="Node2D"]
+z_index = 5
+script = ExtResource("1_n1y07")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 6)
+scale = Vector2(0.0380859, 0.038086)
+texture = ExtResource("2_5dscb")
+
+[node name="UI" type="Node2D" parent="."]
+visible = false
+
+[node name="Question" type="Panel" parent="UI"]
+offset_left = 13.0
+offset_top = -152.0
+offset_right = 201.0
+offset_bottom = -11.0
+scale = Vector2(0.927786, 1.01418)
+
+[node name="A" type="Button" parent="UI/Question"]
+layout_mode = 0
+offset_left = 4.31134
+offset_top = 113.392
+offset_right = 23.3113
+offset_bottom = 144.392
+scale = Vector2(1.21913, 0.755122)
+text = "A"
+
+[node name="B" type="Button" parent="UI/Question"]
+layout_mode = 0
+offset_left = 34.4907
+offset_top = 113.392
+offset_right = 53.4907
+offset_bottom = 144.392
+scale = Vector2(1.22348, 0.741082)
+text = "B"
+
+[node name="C" type="Button" parent="UI/Question"]
+layout_mode = 0
+offset_left = 63.5922
+offset_top = 113.392
+offset_right = 82.5922
+offset_bottom = 144.392
+scale = Vector2(1.22348, 0.741082)
+text = "C"
+
+[node name="D" type="Button" parent="UI/Question"]
+layout_mode = 0
+offset_left = 93.7716
+offset_top = 113.392
+offset_right = 113.772
+offset_bottom = 144.392
+scale = Vector2(1.22348, 0.741082)
+text = "D"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/Question"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 10
+fit_content = true
+tab_size = 5
+
+[node name="Correct" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 5)
+scale = Vector2(0.0636851, 0.0639879)
+texture = ExtResource("5_15pjw")
+
+[node name="Incorrect" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 5)
+scale = Vector2(0.0636851, 0.0639879)
+texture = ExtResource("6_gyx5y")

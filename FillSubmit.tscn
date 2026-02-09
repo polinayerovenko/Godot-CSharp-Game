@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://h5dig2dn3sf0"]
+
+[ext_resource type="Script" path="res://FillInQuestion.cs" id="1_ugchu"]
+[ext_resource type="Texture2D" uid="uid://chwd0uu6lp6sr" path="res://toggles.png" id="2_hrno3"]
+[ext_resource type="PackedScene" uid="uid://bmmu8mkmjqff7" path="res://HUD.tscn" id="3_jn5sb"]
+[ext_resource type="Texture2D" uid="uid://dxspfxr8mje2u" path="res://check-mark.png" id="4_fadw3"]
+
+[node name="FillSubmit" type="Node2D"]
+z_index = 5
+script = ExtResource("1_ugchu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0380859, 0.038086)
+texture = ExtResource("2_hrno3")
+
+[node name="UI" type="Node2D" parent="."]
+visible = false
+z_index = 5
+
+[node name="Control" parent="UI" instance=ExtResource("3_jn5sb")]
+z_index = 5
+offset_left = 14.0
+offset_top = -19.0
+offset_right = 14.0
+offset_bottom = -19.0
+scale = Vector2(0.445504, 0.599132)
+
+[node name="Correct" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 5)
+scale = Vector2(0.0636851, 0.0639879)
+texture = ExtResource("4_fadw3")

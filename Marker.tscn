@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2cwk25habiwk"]
+
+[ext_resource type="Texture2D" uid="uid://lk3f7h8gf3vx" path="res://position-marker.png" id="1_8hv5i"]
+[ext_resource type="Script" path="res://Marker.cs" id="2_i3k34"]
+
+[node name="Marker" type="Sprite2D"]
+z_index = 10
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_8hv5i")
+script = ExtResource("2_i3k34")

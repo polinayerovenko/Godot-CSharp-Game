@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://ir6tpubqkcxj"]
+
+[ext_resource type="Script" path="res://TextSubmit.cs" id="1_1lmhc"]
+[ext_resource type="Texture2D" uid="uid://chwd0uu6lp6sr" path="res://toggles.png" id="2_at5qj"]
+[ext_resource type="Texture2D" uid="uid://dxspfxr8mje2u" path="res://check-mark.png" id="5_hwyf0"]
+[ext_resource type="Texture2D" uid="uid://cvyy2jngg4dpc" path="res://crossed-bones.png" id="6_o71ii"]
+
+[node name="Submision3" type="Node2D"]
+z_index = 5
+script = ExtResource("1_1lmhc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 6)
+scale = Vector2(0.0380859, 0.038086)
+texture = ExtResource("2_at5qj")
+
+[node name="UI" type="Node2D" parent="."]
+visible = false
+
+[node name="Question" type="Panel" parent="UI"]
+offset_left = 13.0
+offset_top = -157.0
+offset_right = 201.0
+offset_bottom = -11.0
+scale = Vector2(0.927786, 1.01418)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/Question"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.016
+anchor_bottom = 1.0
+offset_right = -3.00801
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextEdit" type="TextEdit" parent="UI/Question"]
+layout_mode = 0
+offset_left = 1.07783
+offset_top = 95.6438
+offset_right = 187.078
+offset_bottom = 143.644
+
+[node name="TextureButton" type="TextureButton" parent="UI/Question"]
+layout_mode = 0
+offset_left = 165.987
+offset_top = 101.56
+offset_right = 677.987
+offset_bottom = 613.56
+scale = Vector2(0.0357044, 0.030197)
+texture_normal = ExtResource("5_hwyf0")
+texture_pressed = ExtResource("5_hwyf0")
+texture_hover = ExtResource("5_hwyf0")
+texture_disabled = ExtResource("5_hwyf0")
+texture_focused = ExtResource("5_hwyf0")
+
+[node name="Correct" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 5)
+scale = Vector2(0.0636851, 0.0639879)
+texture = ExtResource("5_hwyf0")
+
+[node name="Incorrect" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, 5)
+scale = Vector2(0.0636851, 0.0639879)
+texture = ExtResource("6_o71ii")
