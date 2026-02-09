@@ -19,8 +19,8 @@ The castle has **two floors**, each representing a level. Each floor contains **
 2. Select the correct answer from multiple-choice options  
 3. Answer a question manually  
 
-Completing all exercises in a room unlocks the door to the next room. After finishing all rooms on the first floor, the entrance to the second floor opens, continuing the same structure until the player reaches the exit of the castle.  
-Each floor has a unique design and interior, making the experience visually engaging. Once the player finishes the game, they can return to the menu and choose a level again.
+After completing all tasks in a room, the door to the next room opens. Completing the first floor unlocks access to the second floor. After finishing all tasks on the second floor, the player returns to the menu and can select a level again.  
+Each floor of the castle has a unique design and interior items. The game also includes **background music and sound effects** to enhance the learning experience and immersion.
 
 ## My role and implementation
 
