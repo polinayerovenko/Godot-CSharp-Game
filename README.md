@@ -33,14 +33,6 @@ Each floor of the castle has a unique design and interior items. The game also i
 
 This project demonstrates my ability to apply C# programming skills in a practical, interactive application, combining logic, object-oriented programming, and user interface design.
 
-## How to run
-
-1. Install [Godot Engine](https://godotengine.org/download) (latest stable version)  
-2. Clone this repository:  
-   ```bash
-   git clone https://github.com/yourusername/CSharpLearningGame.git
-3. Open the project in Godot
-4. Press Play to start the game
  
 
 
