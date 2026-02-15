@@ -5,7 +5,7 @@ The goal of the game is to help players learn and practice C# concepts in an int
 
 ## Game concept
 
-The player controls a **knight** who is trapped in a castle and must complete all levels to escape.  
+The player controls a **knight** who is trapped in a castle and must learn C# and complete all levels to escape.  
 When starting the game, the knight enters the **main menu**, where the player can:
 
 - Enter their name  
