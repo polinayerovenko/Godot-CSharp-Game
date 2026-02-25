@@ -94,7 +94,7 @@ offset_left = 223.0
 offset_top = 322.0
 offset_right = 307.0
 offset_bottom = 347.0
-text = "В МЕНЮ"
+text = "BACK TO MENU"
 
 [node name="Panel3" type="Panel" parent="."]
 visible = false
@@ -123,9 +123,9 @@ theme_override_font_sizes/mono_font_size = 12
 bbcode_enabled = true
 text = "[center][b]Congratulations[/b]
 
-You have finished the C# course and escaped from the castle!
+You have successfully completed the top floor, 
+now you can move on to the next one!
 
-Enjoy your freedom!
 
 Number of correct answers on this floor: 14"
 
