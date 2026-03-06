@@ -1,10 +1,10 @@
-##C# Learning game: Castle Adventure 
+**C# Learning game: Castle Adventure** 
 An interactive 2D educational RPG developed with Godot Engine 4 and C#. This project is designed to teach C# programming fundamentals through immersive gameplay and practical problem-solving.
 
-## Overview
+**Overview**
 In Castle Adventure, players take on the role of a knight trapped in a mysterious castle. To escape, the player must explore rooms, study theoretical materials, and solve C# programming challenges. The game bridges the gap between theory and practice by requiring players to apply what they've learned to unlock the path forward.
 
-## Tech Stack
+**Tech Stack**
 Engine: Godot 4.x (Mono/Core)
 
 Language: C# (.NET 6.0)
@@ -13,7 +13,7 @@ Architecture: node-based scene composition, interface-driven interaction
 
 Patterns: observer pattern (signals), singleton (autoload), polymorphism
 
-## Key features and implementation
+**Key features and implementation**
 1. Interactive quest system (marker and logic)
 The core of the game is a Dynamic Marker System. Unlike static tutorials, the game uses a custom IPrompt interface implemented by all interactive objects (Signs, Doors, Questions).
 
@@ -37,7 +37,7 @@ Manual console input: a system that captures string input and compares it agains
 
 Multiple choice: an event-driven system providing instant visual and auditory feedback via Godot Signals.
 
-##Project structure
+**Project structure**
 
 Level 1: focuses on imperative programming (Variables, Data Types, If/Else).
 
@@ -48,7 +48,7 @@ The game features three distinct types of technical challenges:
 
 Code Injection (Fill-in-the-blanks): Logic that scans user input for specific C# keywords and validates syntax.
 
-## Setup & Installation
+**Setup & Installation**
 Prerequisites
 .NET SDK 6.0+
 
@@ -67,7 +67,7 @@ Click the "Build" button in the top-right corner of the Godot editor to compile 
 Play:
 Press F5 to start the game.
 
-# Controls
+**Controls**
 WASD: Move the Knight
 
 Shift: Sprint
