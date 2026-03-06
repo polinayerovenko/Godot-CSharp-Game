@@ -5,12 +5,9 @@ An interactive 2D educational RPG developed with Godot Engine 4 and C#. This pro
 In Castle Adventure, players take on the role of a knight trapped in a mysterious castle. To escape, the player must explore rooms, study theoretical materials, and solve C# programming challenges. The game bridges the gap between theory and practice by requiring players to apply what they've learned to unlock the path forward.
 
 **Tech Stack**
-Engine: Godot 4.x (Mono/Core)
-
+Engine: Godot 4.x 
 Language: C# (.NET 6.0)
-
 Architecture: node-based scene composition, interface-driven interaction
-
 Patterns: observer pattern (signals), singleton (autoload), polymorphism
 
 **Key features and implementation**
