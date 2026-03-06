@@ -1,38 +1,81 @@
-C# Learning Game – Castle Adventure
+##C# Learning game: Castle Adventure 
+An interactive 2D educational RPG developed with Godot Engine 4 and C#. This project is designed to teach C# programming fundamentals through immersive gameplay and practical problem-solving.
 
-This is an educational **2D game** developed in **Godot Engine** using **C#**, created as part of my learning project.  
-The goal of the game is to help players learn and practice C# concepts in an interactive and engaging way.
+## Overview
+In Castle Adventure, players take on the role of a knight trapped in a mysterious castle. To escape, the player must explore rooms, study theoretical materials, and solve C# programming challenges. The game bridges the gap between theory and practice by requiring players to apply what they've learned to unlock the path forward.
 
-## Game concept
+## Tech Stack
+Engine: Godot 4.x (Mono/Core)
 
-The player controls a **knight** who is trapped in a castle and must learn C# and complete all levels to escape.  
-When starting the game, the knight enters the **main menu**, where the player can:
+Language: C# (.NET 6.0)
 
-- Enter their name  
-- Choose one of two levels (two floors of the castle):  
-  - **Level 1:** For players with basic C# knowledge  
-  - **Level 2:** More advanced C# concepts  
+Architecture: node-based scene composition, interface-driven interaction
 
-The castle has **two floors**, each representing a level. Each floor contains **5 rooms**, and each room includes **theoretical C# material** and **three exercises**:  
+Patterns: observer pattern (signals), singleton (autoload), polymorphism
 
-1. Fill in the missing code in a snippet  
-2. Select the correct answer from multiple-choice options  
-3. Answer a question manually  
+## Key features and implementation
+1. Interactive quest system (marker and logic)
+The core of the game is a Dynamic Marker System. Unlike static tutorials, the game uses a custom IPrompt interface implemented by all interactive objects (Signs, Doors, Questions).
 
-After completing all tasks in a room, the door to the next room opens. Completing the first floor unlocks access to the second floor. After finishing all tasks on the second floor, the player returns to the menu and can select a level again.  
-Each floor of the castle has a unique design and interior items. The game also includes **background music and sound effects** to enhance the learning experience and immersion.
+Sequential learning: the marker points to the next task and only advances once the BecameNext() condition returns true.
 
-## My role and implementation
+Polymorphism: this allows the same marker logic to handle a simple dialogue sign or a complex code-validation door seamlessly.
 
-- Developed the project using Godot Engine with C# scripting, including game logic, UI, and scene management  
-- Implemented classes and objects to represent rooms, floors, and exercises  
-- Created methods and functions to handle game progression, exercise validation, and player input  
-- Used conditional statements and loops for game mechanics and exercise logic  
-- Designed interactive menus and input forms for player name and level selection  
-- Structured the project to be modular and maintainable, allowing easy addition of new rooms or exercises  
+2. Physics-based kinematics
+Movement: implemented using CharacterBody2D with vector-based velocity calculations.
 
-This project demonstrates my ability to apply C# programming skills in a practical, interactive application, combining logic, object-oriented programming, and user interface design.
+Vector math: uses vector normalization to ensure consistent movement speed during diagonal traversal.
 
- 
+Collision handling: integrated Godot’s physics engine with MoveAndSlide() for smooth environmental interaction.
 
+3. Advanced input validation
+The game features three distinct types of technical challenges:
 
+Code injection (Fill-in-the-blanks): logic that scans user input for specific C# keywords and validates syntax.
+
+Manual console input: a system that captures string input and compares it against expected results while managing player state (locking movement during input).
+
+Multiple choice: an event-driven system providing instant visual and auditory feedback via Godot Signals.
+
+##Project structure
+
+Level 1: focuses on imperative programming (Variables, Data Types, If/Else).
+
+Level 2: focuses on object-oriented programming (Loops, Classes, Methods, Data handling).
+
+Scripts/: Organized C# classes (e.g., Movement.cs, Marker.cs, Sign.cs).
+The game features three distinct types of technical challenges:
+
+Code Injection (Fill-in-the-blanks): Logic that scans user input for specific C# keywords and validates syntax.
+
+## Setup & Installation
+Prerequisites
+.NET SDK 6.0+
+
+Godot Engine 4.x (.NET Version) (Make sure you have the "Mono" or ".NET" build).
+
+Running the project
+Clone the repository:
+
+git clone https://github.com/polinayerovenko/Godot-CSharp-Game.git
+Open in Godot:
+Launch Godot and import the project.godot file.
+
+Build Solution:
+Click the "Build" button in the top-right corner of the Godot editor to compile the C# scripts.
+
+Play:
+Press F5 to start the game.
+
+# Controls
+WASD: Move the Knight
+
+Shift: Sprint
+
+E: Interact with objects (Signs, Doors, Panels)
+
+Mouse: Navigate UI and click buttons
+
+Manual Console Input: A system that captures string input and compares it against expected results while managing player state (locking movement during input).
+
+Multiple Choice: An event-driven system providing instant visual and auditory feedback via Godot Signals.
