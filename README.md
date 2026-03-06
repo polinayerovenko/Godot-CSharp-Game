@@ -43,10 +43,10 @@ Level 1: focuses on imperative programming (Variables, Data Types, If/Else).
 
 Level 2: focuses on object-oriented programming (Loops, Classes, Methods, Data handling).
 
-Scripts/: Organized C# classes (e.g., Movement.cs, Marker.cs, Sign.cs).
+Scripts/: organized C# classes (e.g., Movement.cs, Marker.cs, Sign.cs).
 The game features three distinct types of technical challenges:
 
-Code Injection (Fill-in-the-blanks): Logic that scans user input for specific C# keywords and validates syntax.
+Code Injection (Fill-in-the-blanks): logic that scans user input for specific C# keywords and validates syntax.
 
 **Setup & Installation**
 Prerequisites
